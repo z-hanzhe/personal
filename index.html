@@ -1,77 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ch">
-    <head>
-        <!-- META -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- PAGE TITLE -->
-        <title>个人WEB网站 | 张涵哲</title>
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="assets/img/favicon.png">
-        <!-- FONTS -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CArapey&amp;subset=latin-ext" rel="stylesheet"> -->
-        <!-- STYLESHEETS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    </head>
-    <body>
-        <!-- PRELOADER -->
-        <div class="preloader">
-            <div class="spinner"></div>
-        </div>
-        <!-- 左侧图片展示 -->
-        <div class="image-container">
-            <div class="background-img"></div>
-        </div>
-        <!-- 右侧内容展示 -->
-        <div class="content-area">
-            <!-- CONTENT AREA INNER --> 
-            <div class="content-area-inner">
-                <!-- 1. 个人简介 -->
-                <section id="intro">
-                    <!-- CONTAINER MID -->
-                    <div class="container-mid">
-                        <!-- ANIMATION CONTAINER -->
-                        <div class="animation-container animation-fade-down" data-animation-delay="0">
-                            <h1>Welcome here</h1>
-                        </div>
-                        <!-- ANIMATION CONTAINER -->
-                        <div class="animation-container animation-fade-left" data-animation-delay="300">
-                            <p class="subline">这里是张涵哲的个人WEB站点</p>
-                        </div>
-                        <!-- ANIMATION CONTAINER -->
-                        <div class="animation-container animation-fade-up" data-animation-delay="600">
-                            <a href="#about" class="smooth-scroll">了解更多<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </section>
-                <!-- ABOUT -->
-                <section id="about">
-						<h3 class="headline scroll-animated-from-right">我的技能</h3>
-						<p class="scroll-animated-from-right">本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载，精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写，熟悉 Windows、Linux、OS X、Android、iOS、WP8 等系统的开关机。</p>
-						<!-- <p class="scroll-animated-from-right">Duis consectetur massa sit amet nibh rhoncus, at pharetra ligula aliquet. Ut ac velit vestibulum, eleifend diam ut, malesuada nisi. Sed vel felis vitae diam luctus commodo. Nunc ipsum est, vulputate id orci ac, luctus consectetur sapien.</p> -->
-				</section>
-                <!-- SERVICE -->
-                <section id="service">
-                    <h3 class="headline scroll-animated-from-right">联系我</h3>
-                    <!-- SERVICE LIST -->
-                    <ul class="services-list">
-						<li class="scroll-animated-from-right">
-							<i class="fa fa-weixin" aria-hidden="true"></i> i-223344
-						</li>
-						<li class="scroll-animated-from-right">
-							<i class="fa fa-qq" aria-hidden="true"></i> 1452079621
-						</li>
-						<li class="scroll-animated-from-right">
-							<i class="fa fa-envelope" aria-hidden="true"></i> zhang_hanzhe@qq.com
-						</li>
-                    </ul>
-                </section>
-				<!-- 这之后的代码都用不上了 -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>张涵哲主页</title>
+    <meta name="description" content="张涵哲的个人主页">
+    <meta name="keywords" content="张涵哲">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+</head>
+
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>你好，我是张涵哲</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>一个喜欢分享的开发者</p>
             </div>
         </div>
-        <!-- JAVASCRIPTS -->
-        <script type="text/javascript" src="assets/js/plugins.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
-    </body> 
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>root - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@zhanghanzhe</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">rm -rf /过去的自己/*</span>
+                    <br> <br>
+
+                    <span style="color: rgb(0, 190, 0);">root@zhanghanzhe</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat wish.txt</span>
+                    <p>我有一个梦，也许有一天，灿烂的阳光能照进黑暗森林。</p>
+                    <br> <br>
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>root - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@zhanghanzhe</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat /links.txt</span>
+                    <br>
+                    <p>我的其他站点：</p>
+                    <ul class="ul">
+                        <li><a href="https://www.hanzhe.site" target="_blank">本站地址</a></li>
+                        <li><a href="https://cnblogs.com/hanzhe" target="_blank">我的博客园</a></li>
+                        <li><a href="http://docs.hanzhe.site" target="_blank">个人知识库</a></li>
+                        <li><a href="https://typecho.hanzhe.site" target="_blank">个人博客网站</a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div id="footer">
+        <p>© 2023 hanzhe.site</p>
+    </div>
+</body>
+
 </html>
