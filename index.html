@@ -1,105 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" href="img/titleLogo.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
-		<link rel="stylesheet" href="css/all.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/templatemo-style.css" />
-		<title>张涵哲 - Java小生</title>
-	</head>
-	<body>
-		<!-- Welcome Section -->
-		<section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-			<div class="container-fluid tm-brand-container-outer">
-				<div class="row">
-					<div class="col-12">
-						<!-- Logo Area -->
-						<!-- Black transparent bg -->
-						<div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
-							<div class="tm-brand-container text-center">
-								<h1 class="tm-brand-name">Welcome</h1>
-								<p class="tm-brand-description mb-0">Java编程 & 张涵哲</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="tm-bg-white-transparent tm-welcome-container">
-				<div class="container-fluid">
-					<div class="row h-100">
-						<!-- Welcome Text -->
-						<!-- White transparent bg -->
-						<div class="col-md-7 tm-welcome-left-col">
-							<div class="tm-welcome-left">
-								<h2 class="tm-welcome-title">Java实习生</h2>
-								<p class="pb-0">
-									本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载，精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写，熟悉 Windows、Linux、OS X、Android、iOS、WP8 等系统的开关机。
-								</p>
-							</div>
-						</div>
-						<!-- Brown bg -->
-						<div class="col-md-5">
-							<div class="tm-welcome-right" style="text-align: center; padding-top: 45px;">
-								<i><img src="img/about.jpg" width="200px" /></i>
-								<div style="height: 30px;"></div>
-								<h1>张涵哲</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Welcome section -->
-
-		<!-- Contact section -->
-		<!-- <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
-			<div style="text-align: center; margin-top: 100px; padding-bottom: 200px;">
-				<h2>闲来无事瞅瞅吧！</h2>
-				<br />
-				<a href="http://blog.hanzhe.club" title="访问我的博客！">
-					<img src="img/bird.jpg" style="width: 50%; border-radius: 3%; border: 2px solid black;">
-				</a>
-			</div>
-		</div> -->
-		<!-- section -->	
-		<script src="js/jquery.min.js"></script>
-		<script src="js/parallax.min.js"></script>
-		<script>
-			function detectMsBrowser() {
-				using_ms_browser =
-					navigator.appName == "Microsoft Internet Explorer" ||
-					(navigator.appName == "Netscape" &&
-						navigator.appVersion.indexOf("Edge") > -1) ||
-					(navigator.appName == "Netscape" &&
-						navigator.appVersion.indexOf("Trident") > -1);
-
-				if (using_ms_browser == true) {
-					alert(
-						"Please use Chrome or Firefox for the best browsing experience!"
-					);
-				}
-			}
-
-			function setBrandMarginTop() {
-				var bottomContainerHeight = $(".tm-welcome-container").height();
-
-				$(".tm-brand-container-outer").css({
-					"margin-top": -bottomContainerHeight + "px"
-				});
-			}
-
-			$(function() {
-				setBrandMarginTop();
-				detectMsBrowser();
-
-				// Handle window resize event
-				$(window).resize(function() {
-					setBrandMarginTop();
-				});
-			});
-		</script>
-	</body>
+<!doctype html>
+<html lang="ch">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- PAGE TITLE -->
+        <title>个人WEB网站 | 张涵哲</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <!-- FONTS -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CArapey&amp;subset=latin-ext" rel="stylesheet"> -->
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    </head>
+    <body>
+        <!-- PRELOADER -->
+        <div class="preloader">
+            <div class="spinner"></div>
+        </div>
+        <!-- 左侧图片展示 -->
+        <div class="image-container">
+            <div class="background-img"></div>
+        </div>
+        <!-- 右侧内容展示 -->
+        <div class="content-area">
+            <!-- CONTENT AREA INNER --> 
+            <div class="content-area-inner">
+                <!-- 1. 个人简介 -->
+                <section id="intro">
+                    <!-- CONTAINER MID -->
+                    <div class="container-mid">
+                        <!-- ANIMATION CONTAINER -->
+                        <div class="animation-container animation-fade-down" data-animation-delay="0">
+                            <h1>Welcome here</h1>
+                        </div>
+                        <!-- ANIMATION CONTAINER -->
+                        <div class="animation-container animation-fade-left" data-animation-delay="300">
+                            <p class="subline">这里是张涵哲的个人WEB站点</p>
+                        </div>
+                        <!-- ANIMATION CONTAINER -->
+                        <div class="animation-container animation-fade-up" data-animation-delay="600">
+                            <a href="#about" class="smooth-scroll">了解更多<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ABOUT -->
+                <section id="about">
+						<h3 class="headline scroll-animated-from-right">我的技能</h3>
+						<p class="scroll-animated-from-right">本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载，精通 CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript、Pascal 等单词的拼写，熟悉 Windows、Linux、OS X、Android、iOS、WP8 等系统的开关机。</p>
+						<!-- <p class="scroll-animated-from-right">Duis consectetur massa sit amet nibh rhoncus, at pharetra ligula aliquet. Ut ac velit vestibulum, eleifend diam ut, malesuada nisi. Sed vel felis vitae diam luctus commodo. Nunc ipsum est, vulputate id orci ac, luctus consectetur sapien.</p> -->
+				</section>
+                <!-- SERVICE -->
+                <section id="service">
+                    <h3 class="headline scroll-animated-from-right">联系我</h3>
+                    <!-- SERVICE LIST -->
+                    <ul class="services-list">
+						<li class="scroll-animated-from-right">
+							<i class="fa fa-weixin" aria-hidden="true"></i> i-223344
+						</li>
+						<li class="scroll-animated-from-right">
+							<i class="fa fa-qq" aria-hidden="true"></i> 1452079621
+						</li>
+						<li class="scroll-animated-from-right">
+							<i class="fa fa-envelope" aria-hidden="true"></i> zhang_hanzhe@qq.com
+						</li>
+                    </ul>
+                </section>
+				<!-- 这之后的代码都用不上了 -->
+            </div>
+        </div>
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="assets/js/plugins.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body> 
 </html>
