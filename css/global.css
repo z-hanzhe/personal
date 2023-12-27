@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(to left, rgba(87, 0, 255, 0.2), rgba(0, 48, 255, 0.2)), url(../img/bg.jpg);
+    background-image: linear-gradient(to left, rgba(87, 0, 255, 0.2), rgba(0, 48, 255, 0.2)), url(https://img.hanzhe.site/i/assets/personal_bg.jpg);
     /*background-image: url(../img/bg.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,7 +45,7 @@ body {
 .headPhoto {
     width: 8rem;
     height: 8rem;
-    background: url("../img/photo.jpg") no-repeat;
+    background: url(https://img.hanzhe.site/i/assets/admin_avatar.png) no-repeat;
     background-size: cover;
     border-radius: 50%;
     position: relative;
