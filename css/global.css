@@ -82,11 +82,11 @@ body {
 .meBox-title p {
     font-size: 1.2rem;
     border-right: .1em solid;
-    width: 14ch;
+    width: 13.5ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing .7s steps(20, end), blink-caret .3s step-end infinite alternate;
-    margin: -30px 0 0 70px;
+    animation: typing 1s steps(20, end), blink-caret .5s step-end infinite alternate;
+    margin: -30px auto 0 auto;
     transition: all 0.3s;
 }
 
